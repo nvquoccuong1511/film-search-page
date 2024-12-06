@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/stylesheet.css">
+    <title>Film Finder</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="welcomeMessage">Welcome to CuongFlix!</h1>
+        <!-- Existing elements and code -->
+    </div>
+    <div class="search-div">
+            <input type="text" id="filmName" class="search-input" name="" placeholder="Search for a film">
+            <p id="searchWarningMessage" class="warning">Name field must has greater than 3 characters</p>
+            <button class="search-button" onclick="fetchData()" >Search</button>
+    </div>
+    <!-- The Details view when the show is clicked -->
+    <div class="detail-view" id="showDetail"></div>
+    <!-- The Details of Seasons when the show is clicked -->
+    <div id="espisodesContainer"></div>    
+    <img src="" alt="">
+    <!-- Block that display the result from search if any -->
+    <div class="resultFromSearch" id="resultContainer"></div>
+    <!-- display when there is no result -->
+    <div id="no-result"></div>
+    <script src="fetch.js"></script>
+</body>
+</html>
